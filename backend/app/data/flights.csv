@@ -1,0 +1,3 @@
+OriginAirport,DestinationAirport,OriginLat,OriginLong,DestLat,DestLong,Emissions
+FRA,MUC,50.0379,8.5622,48.3538,11.7861,1234.5
+BER,HAM,52.3667,13.5033,53.6304,9.988,890.7
