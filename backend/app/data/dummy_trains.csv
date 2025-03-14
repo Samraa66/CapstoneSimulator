@@ -1,0 +1,6 @@
+stop_name,next_stop_name,trip_count,total_passengers,capacity,OriginLat,OriginLong,DestLat,DestLong
+Berlin,Leipzig,3,1500,500,52.52,13.405,51.3397,12.3731
+Leipzig,Munich,3,1400,480,51.3397,12.3731,48.1351,11.582
+Frankfurt,Hamburg,4,1600,550,50.1109,8.6821,53.5511,9.9937
+Cologne,Stuttgart,3,1300,450,50.9375,6.9603,48.7758,9.1829
+Dusseldorf,Leipzig,2,1100,400,51.2277,6.7735,51.3397,12.3731

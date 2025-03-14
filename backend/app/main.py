@@ -1,6 +1,12 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, Depends
 from app.routes import router
 from fastapi.middleware.cors import CORSMiddleware
+from app.database import engine, Base
+import app.models
+
+# ✅ Create tables in the database
+Base.metadata.create_all(bind=engine)
+print("✅ Tables created in PostgreSQL")
 
 
 app = FastAPI(title="Transportation Emissions API")

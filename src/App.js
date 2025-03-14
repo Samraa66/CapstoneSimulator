@@ -10,19 +10,32 @@ import Simulator from "./pages/Simulator";
 function App() {
   return (
     <Router>
-      <nav style={{ padding: "10px", backgroundColor: "#f0f0f0" }}>
-        <Link to="/" style={{ marginRight: "10px" }}>Home</Link>
-        <Link to="/train" style={{ marginRight: "10px" }}>Train</Link>
-        <Link to="/flight" style={{ marginRight: "10px" }}>Flight</Link>
-        <Link to="/simulator">Simulator</Link>
+      <nav style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "20px",
+        padding: "15px",
+        backgroundColor: "#f8f9fa",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        zIndex: 1000,
+      }}>
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/train" className="nav-link">Train</Link>
+        <Link to="/flight" className="nav-link">Flight</Link>
+        <Link to="/simulator"className="nav-link">Simulator</Link>
       </nav>
-
+      <div style={{ marginTop: "60px" }}> {/* Adds space so content doesn't go under nav */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/train" element={<TrainPage />} />
         <Route path="/flight" element={<FlightPage />} />
         <Route path="/simulator" element={<Simulator />} />
       </Routes>
+      </div>
     </Router>
   );
 }
